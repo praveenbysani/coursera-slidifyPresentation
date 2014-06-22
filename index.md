@@ -1,7 +1,7 @@
 ---
 title       : Are you a Survivor ?
 subtitle    : a statistical overview of the Titanic mishap
-author      : Praveen Bysani
+author      : Praveen Bysani 
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
@@ -50,10 +50,9 @@ The above table gives a overall summary of the data. All the 4 dimensions are ca
 It is very difficult to comprehend the data from this table. I developed this app to enable the user to understand the effects of these factors on the probability of survival.
 
 
-The data is represented as a box-plot of class Vs. Frequency. The user can change the age group and choose between survived or deceased and visually observe the changes in the plot.
+The data is represented as a scatter plot of class Vs. survival probability. The user can change the age group and gender of the target group and visually observe the changes in the plot.
 
 
-User may refer to the following link for more information about [box plots](http://onlinestatbook.com/2/graphing_distributions/boxplots.html)
 
 ----
 
