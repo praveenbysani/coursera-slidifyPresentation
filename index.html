@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Are you a Survivor ?</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Are you a Survivor ?">
+  <meta name="author" content="Praveen Bysani">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Are you a Survivor ?</h1>
+    <h2>a statistical overview of the Titanic mishap</h2>
+    <p>Praveen Bysani<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>About the Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The package &quot;datasets&quot; contains the table &quot;Titanic&quot;, that provides data about the survivors in the tragic incident of Titanic. The dataset has 4 dimensions</p>
+
+<ol>
+<li>Class: The class in which the passenger is travelling</li>
+<li>Sex: The gener of the passenger</li>
+<li>Age: The age group of the passenger</li>
+<li>Survived: Information about whether the passenger is survived or not</li>
+</ol>
+
+<p>The table contains the frequency of passengers in all the possible combinations of above factors</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Overview of data</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">TitanicData &lt;- as.data.frame(Titanic)
+summary(TitanicData)
+</code></pre>
+
+<pre><code>##   Class       Sex        Age     Survived      Freq      
+##  1st :8   Male  :16   Child:16   No :16   Min.   :  0.0  
+##  2nd :8   Female:16   Adult:16   Yes:16   1st Qu.:  0.8  
+##  3rd :8                                   Median : 13.5  
+##  Crew:8                                   Mean   : 68.8  
+##                                           3rd Qu.: 77.0  
+##                                           Max.   :670.0
+</code></pre>
+
+<p>The above table gives a overall summary of the data. All the 4 dimensions are categorical variables thus represented as factors in data.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Comprehending Information</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>It is very difficult to comprehend the data from this table. I developed this app to enable the user to understand the effects of these factors on the probability of survival.</p>
+
+<p>The data is represented as a box-plot of class Vs. Frequency. The user can change the age group and choose between survived or deceased and visually observe the changes in the plot.</p>
+
+<p>User may refer to the following link for more information about <a href="http://onlinestatbook.com/2/graphing_distributions/boxplots.html">box plots</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Insights</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There are few interesting insights that could be derived from this,</p>
+
+<ol>
+<li>All the children from 1st and 2nd class are survived</li>
+<li>The probability of survival is much higher if you were a crew</li>
+<li>The chances of surviving is minimal if you were an adult traveling in first class</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='About the Data'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Overview of data'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Comprehending Information'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Insights'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
